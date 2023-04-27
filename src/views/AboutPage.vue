@@ -1,23 +1,16 @@
 <template>
-<section class="heroSection py-28 bg-gray-950">
-    <div class="container mx-auto">
-        <h1 class="text-5xl text-green-500">About Us</h1>
-        <p class="text-gray-500">Read About </p>
-    </div>
-</section>
-<section class="aboutsection">
-    <div class="grid lg:grid-cols-2 sm:grid-cols-2 gap-5 justify-center  items-center" style="background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5c2NyYXBlcnxlbnwwfHwwfHw%3D&w=1000&q=80);background-size: cover;
-  background-repeat: no-repeat;background-position: center;">
-        <div class="text-left p-12">
-            <h5 class="text-gren-900 font-extrabold text-green-500 italic">Spinning The Wheel Is</h5>
-            <h5 class="text-gren-900 font-extrabold text-white italic">Always Our Priority</h5>
-            <h1 class="font-bold md:text-7xl text-4xl py-12 text-white"> Digital Marketing Agency In Los Angeles</h1>
-            <CTAButton/>
-        </div>
-        <div>
+<section class="herosection bg-gradient-to-br from-dgtext-800 to-dgcon-400 md:h-screen md:px-12 md:pt-12 px-2 py-4">
+    <div class="grid md:grid-cols-1 w-4/5 justify-center pt-20 container mx-auto">
+        <div class="space-y-8">
+            <div class="text-dgcon-500 text-8xl font-semibold">WE ARE MORE THAN JUST</div>
+            <div class="text-dgcon-500 text-4xl">AN AVERAGE BRAND AGENCY</div>
+            <p class="text-dgcon-500 text-xl">We develop a strong brand identity that connects with your audience!</p>
+            <CTAButton class="ctaBtn bg-dgtext-800 text-dgcon-500 rounded-xl mr-8 border border-dgcon-500 px-8 shadow-xl">Contact Us</CTAButton>
+            <CTAButton class="ctaBtn bg-dgtext-800 text-dgcon-500 rounded-xl mr-8 border border-dgcon-500 px-8 shadow-xl">Portfolio</CTAButton>
         </div>
     </div>
 </section>
+
 <section class="services my-12 mx-12 md:pb-32">
     <h3 class="text-3xl font-bold ">Look Into Our Services</h3>
     <p>Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast</p>
@@ -98,11 +91,21 @@ export default {
 </script>
 
 <style scoped>
+.herosection{
+    background-image: url('@/assets/about-banner.webp');
+    background-size: cover;
+}
+.ctaBtn:hover{
+    transform: translatey(-10px);
+    transition: 1s ease-in-out;
+    box-shadow: 0 10px 10px 0 black;
+}
 .aboutsection{
     overflow: hidden;
     position: relative;
     height: 500px;
 }
+/**Old CSS**/
 .aboutsection::before {
     content: "";
     position: absolute;
@@ -145,7 +148,7 @@ button::before {
     height: 100%;
     top: 0;
     left: -100%;
-    background-color: green;
+    background-color: #ED2B2A;
     transition: all 0.3s ease-in-out 0s;
     z-index: -1;
 }

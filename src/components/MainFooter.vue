@@ -1,6 +1,6 @@
 <template>
     <section class="footer">
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-dgtext-800 text-dgcon-500">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md sm:text-center">
           <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
@@ -23,7 +23,7 @@
       </div>
   </div>
 </section>
-<footer class="bg-white dark:bg-gray-900">
+<footer class="bg-dgtext-800 text-dgcon-500">
     <div class="mx-auto w-full max-w-screen-xl">
       <div class="grid gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
         <div class="text-left">

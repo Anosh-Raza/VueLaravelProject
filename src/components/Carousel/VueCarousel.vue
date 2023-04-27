@@ -1,43 +1,72 @@
 <template>
-    <swiper
-    :modules="modules"
-    :space-between="20"
-    :loop="true"
-    :pagination="{clickable: true}"
-    :autoplay="{
-        delay: 3000,
-        disbaleOnInteraction: false,
-        pauseOnMouseEnter: true
-    }"
->
-<swiper-slide v-for="text in swiperTextBase" :key="text.description">
-    <div class="grid md:grid-cols-2 justify-center items-center md:px-28 px-10 md:py-12 py-8">
-        <div class="md:p-8 p-4 md:text-left">
-            <h1 class="md:text-2xl font-extrabold text-green-500 md:tracking-[0.51em]">{{ text.author }}</h1>
-            <p class="text-white md:text-[50px] text-2xl md:leading-[1em] italic md:py-4 md:pr-4">{{ text.description }}</p>
-            <p class="text-green-500 text-sm">{{ text.designation }}</p>
+<swiper :modules="modules" :slides-per-view="1" :slides-per-group="1" :loop="true" :pagination="false" :autoplay="{
+    delay: 1000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false
+}" :breakpoints="{
+          399: {
+            slidesPerView: 3,
+            slidesPerGroup: 1
+          }}">
+    <swiper-slide v-for="text in swiperTextBase" :key="text.description">
+        <div class="md:px-4 md:py-1 m-6 bg-dgcon-700 rounded-xl">
+            <div class="md:p-8 p-4 md:text-left">
+                <img class="w-1/4 object-cover rounded-full" :src="text.img" alt="">
+                <p class="text-white md:text-[30px] text-xl md:leading-[1em] italic py-4 md:pr-4 text-dgbg-900">{{ text.description }}</p>
+                <h1 class="md:text-2xl font-extrabold text-green-500 md:tracking-[0.01em]">{{ text.author }}</h1>
+                <p class="text-green-500 text-sm">{{ text.designation }}</p>
+                <img class="quotes" :src="QuoteMark" alt="">
+            </div>
         </div>
-    <img class="rounded-full" :src="text.img" alt="">
-    </div>
-</swiper-slide>
+    </swiper-slide>
 </swiper>
 </template>
 
 <script>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay, Pagination } from 'swiper';
+import {
+    Swiper,
+    SwiperSlide
+} from 'swiper/vue';
+import {
+    Autoplay,
+    Pagination
+} from 'swiper';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css'
 import 'swiper/css/pagination'
-import {ref} from 'vue'
+import {
+    ref
+} from 'vue'
 
-export default{
+export default {
     components: {
         Swiper,
         SwiperSlide
     },
-    setup(){
-        const swiperTextBase = ref ([
+    data() {
+        return {
+            QuoteMark: require('@/assets/quotation-mark-icon.webp'),
+        }
+    },
+    setup() {
+        const swiperTextBase = ref([{
+                author: 'Noon Pawl',
+                description: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, error!',
+                designation: "CEO | Twitter",
+                img: 'https://images.barrons.com/im-709895?width=639&height=426',
+            },
+            {
+                author: 'Noon Pawl',
+                description: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, error!',
+                designation: "CEO | Twitter",
+                img: 'https://images.barrons.com/im-709895?width=639&height=426',
+            },
+            {
+                author: 'Noon Pawl',
+                description: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, error!',
+                designation: "CEO | Twitter",
+                img: 'https://images.barrons.com/im-709895?width=639&height=426',
+            },
             {
                 author: 'Noon Pawl',
                 description: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, error!',
@@ -57,7 +86,21 @@ export default{
                 img: 'https://images.barrons.com/im-709895?width=639&height=426',
             }
         ]);
-        return{modules: [Pagination, Autoplay], swiperTextBase}
+        return {
+            modules: [Pagination, Autoplay],
+            swiperTextBase
+        }
     },
 }
 </script>
+
+<style scoped>
+.quotes {
+    position: absolute;
+    opacity: 0.05;
+    top: 80%;
+    left: 40%;
+    margin-top: -150px;
+    width: 50%;
+}
+</style>

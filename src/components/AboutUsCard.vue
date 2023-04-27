@@ -1,9 +1,9 @@
 <template>
-    <div class="serviceCard px-8 py-4 rounded-lg shadow-xl sm:pt-4">
+    <div class="serviceCard md:px-8 py-4 rounded-lg shadow-xl sm:pt-4">
             <i :class="iconClass" :style="{color: iconColor}"></i>
             <h4 class="text-2xl py-2">{{ h4Title }}</h4>
             <p>{{ cardDescp }}</p>
-            <button class="button mt-4 bg-green-500 text-white  px-2 rounded">
+            <button class="button mt-4 bg-green-500 text-white px-2 rounded">
                 {{buttonText}}
             </button>
         </div>

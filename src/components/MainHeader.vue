@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="bg-gray-900">
+    <div class="bg-gradient-to-br from-dgcon-400 to-dgtext-800">
         <nav class="
           container
           px-6
@@ -11,10 +11,9 @@
             <div class="flex items-center justify-between">
                 <router-link to="/" class="
               text-xl
-              font-bold
+              text-dgbg-900
               text-green-500
               md:text-2xl
-              hover:text-blue-400
             ">Logo
                 </router-link>
                 <!-- Mobile menu button -->
@@ -43,23 +42,23 @@
             md:space-x-10
             md:mt-0
           ">
-                <li class="text-sm font-bold text-green-500 hover:text-blue-400">
+                <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                     <router-link to="/">Home</router-link>
                 </li>
-                <li class="text-sm font-bold text-green-500 hover:text-blue-400">
+                <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                     <router-link to="/aboutus">About</router-link>
                 </li>
-                <li class="text-sm font-bold text-green-500 hover:text-blue-400">
+                <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                     <router-link to="/portfolio">Portfolio</router-link>
                 </li>
-                <li class="text-sm font-bold text-green-500 hover:text-blue-400">
+                <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                     <router-link to="/blogsPage">Blogs</router-link>
                 </li>
-                <li class="text-sm font-bold text-green-500 hover:text-blue-400">
+                <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                     <router-link to="/contact-us">Contact Us</router-link>
                 </li>
                 <li>
-                    <CTAButton>
+                    <CTAButton class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                         Get Started
                     </CTAButton>
                 </li>

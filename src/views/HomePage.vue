@@ -33,22 +33,7 @@
             </form>
         </div>
     </div>
-    <!-- <UserCard class="bannerUser left-[20em] top-[-5em] bg-dgcon-500">
-        <template #name>
-            Pater Wort
-        </template>
-        <template #design>
-            Design
-        </template>
-    </UserCard>
-    <UserCard class="bannerUser top-[24em] left-[7em] bg-dgcon-500">
-        <template #name>
-            Waren Toll
-        </template>
-        <template #design>
-            Web
-        </template>
-    </UserCard> -->
+  
 </section>
 
 <section class="flex justify-center items-center bg-dgcon-500">
@@ -117,8 +102,8 @@
 </section>
 
 <section class="bg-gray-950 mt-12">
-    <div class="flex mx-auto justify-center">
-        <img src="../assets/marketing.png" alt="">
+    <div class="flex justify-center">
+        <img src="../assets/online_ad.svg" alt="">
     </div>
     <h3 class="text-2xl font-extrabold text-green-500 py-8">See Our Client</h3>
     <div class="bg-dgtext-800">

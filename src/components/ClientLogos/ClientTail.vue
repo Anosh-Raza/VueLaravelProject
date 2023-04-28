@@ -1,15 +1,15 @@
 <template>
 <div id="clientLogo" class=" grid grid-cols-4 py-8 justify-center">
-    <img :src="cl1" alt="">
-    <img :src="cl2" alt="">
-    <img :src="cl3" alt="">
-    <img :src="cl4" alt="">
+    <img class="LogoAnimate" :src="cl1" alt="">
+    <img class="LogoAnimate" :src="cl2" alt="">
+    <img class="LogoAnimate" :src="cl3" alt="">
+    <img class="LogoAnimate" :src="cl4" alt="">
 </div>
 <div id="clientLogo" class="grid grid-cols-4 justify-center">
-    <img :src="cl5" alt="">
-    <img :src="cl6" alt="">
-    <img :src="cl7" alt="">
-    <img :src="cl8" alt="">
+    <img class="LogoAnimate" :src="cl5" alt="">
+    <img class="LogoAnimate" :src="cl6" alt="">
+    <img class="LogoAnimate" :src="cl7" alt="">
+    <img class="LogoAnimate" :src="cl8" alt="">
 </div>
 </template>
 
@@ -37,10 +37,10 @@ export default {
 }
 
 img{
-    background-color: rgb(247, 247, 247);
+    /* background-color: rgb(247, 247, 247); */
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.096);
+    /* box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.096); */
 }
 
 @media screen and (min-width: 788px) {
@@ -55,6 +55,11 @@ img{
     img{
     border-radius: 5px;
 }
+}
+.LogoAnimate:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 2px 16px 1px rgb(0 0 0 / 7%);
+    transition: 0.51s ease-in-out;
 }
 
 </style>

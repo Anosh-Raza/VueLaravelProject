@@ -7,16 +7,19 @@ module.exports = {
   theme: {
     colors:{
       dgcon:{
-        400: "#D21312",
+        400: "#e40246",
         500: "#ffffff",
         600: "#ED2B2A",
         700: "#F15A59",
       },
       dgtext: {
-        800: "#070A52",
+        800: "#1f1646",
       },
       dgbg: {
         900: "#eeeeee",
+      },
+      red: {
+        950: "#e40246",
       }
     },
     extend: {},

@@ -1,18 +1,17 @@
 <template>
 <div>
-    <div class="bg-gradient-to-br from-dgcon-400 to-dgtext-800">
+    <div class="navbar bg-dgtext-800 fixed w-full z-10">
         <nav class="
           container
           px-6
           py-4
           mx-auto
-          md:flex md:justify-between md:items-center
+          md:flex md:justify-between md:items-center shadow-xl
         ">
             <div class="flex items-center justify-between">
                 <router-link to="/" class="
               text-xl
               text-dgbg-900
-              text-green-500
               md:text-2xl
             ">Logo
                 </router-link>
@@ -58,7 +57,7 @@
                     <router-link to="/contact-us">Contact Us</router-link>
                 </li>
                 <li>
-                    <CTAButton class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
+                    <CTAButton class="ctaButton text-sm font-bold text-red-950 bg-dgcon-500">
                         Get Started
                     </CTAButton>
                 </li>
@@ -82,3 +81,9 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.ctaButton:hover {
+    box-shadow: 0px 1px 16px 7px #ffffff73;
+}
+</style>

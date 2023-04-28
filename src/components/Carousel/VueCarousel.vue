@@ -9,12 +9,12 @@
             slidesPerGroup: 1
           }}">
     <swiper-slide v-for="text in swiperTextBase" :key="text.description">
-        <div class="md:px-4 md:py-1 m-6 bg-dgcon-700 rounded-xl">
+        <div class="md:px-4 md:py-1 m-6 bg-red-950 rounded-xl">
             <div class="md:p-8 p-4 md:text-left">
                 <img class="w-1/4 object-cover rounded-full" :src="text.img" alt="">
                 <p class="text-white md:text-[30px] text-xl md:leading-[1em] italic py-4 md:pr-4 text-dgbg-900">{{ text.description }}</p>
-                <h1 class="md:text-2xl font-extrabold text-green-500 md:tracking-[0.01em]">{{ text.author }}</h1>
-                <p class="text-green-500 text-sm">{{ text.designation }}</p>
+                <h1 class="md:text-2xl font-extrabold text-dgbg-900 md:tracking-[0.01em]">{{ text.author }}</h1>
+                <p class="text-dgbg-900 text-sm">{{ text.designation }}</p>
                 <img class="quotes" :src="QuoteMark" alt="">
             </div>
         </div>

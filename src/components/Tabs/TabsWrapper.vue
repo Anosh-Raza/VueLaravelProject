@@ -31,8 +31,11 @@ export default {
 
 <style scoped>
 .tabs{
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tabs_header{
     margin-bottom: 10px;

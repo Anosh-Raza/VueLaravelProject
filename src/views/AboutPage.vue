@@ -1,5 +1,5 @@
 <template>
-<section class="aboutuspg md:h-screen md:px-12 md:pt-28 p-4">
+<section class="aboutuspg md:h-screen md:px-12 pt-28 p-4">
     <div class="grid md:grid-cols-2 justify-center items-center container mx-auto md:w-4/5">
         <div class="text-left">
             <span class="md:text-6xl text-3xl text-dgtext-800 font-extrabold">We Transfer</span><br>
@@ -16,9 +16,10 @@
 </section>
 <section class="md:px-12 bg-dgtext-800 p-4">
     <div class="grid md:grid-cols-2 items-center container mx-auto md:pt-28 md:w-4/5 justify-between">
-        <div class="flex justify-start pr-12">
-        <img src="../assets/mobile_marketing.svg" alt="">
-    </div>
+        <div class="">
+            <img class="hidden sm:block justify-center pr-12" src="../assets/mobile_marketing.svg" alt="">
+            <img class="block sm:hidden" src="../assets/web_search.svg" alt="">
+        </div>
         <div class="text-left space-y-6">
             <h3 class="text-red-950 font-bold text-4xl">Mission</h3>
             <p class="text-dgbg-900 text-sm">DG Concepts is a team of talented individuals who bring different flavors to the table to create the perfect recipe for success. The company aims to provide the best possible services to help you and your business grow.</p>
@@ -69,7 +70,6 @@
         </div>
     </div>
 </section>
-
 </template>
 
 <script>
@@ -112,20 +112,21 @@ export default {
     background-size: contain;
     background-position: center;
 }
+
 /* .marker-color::marker{
     color: red;
     font-size: 1em;
 } */
-.marker-color::before{
+.marker-color::before {
     content: "\25BA";
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1em;
-  color: red;
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
+    color: red;
 }
-.ctaabout:hover{
+
+.ctaabout:hover {
     transform: translateY(-10px);
     transition: 1s ease-in-out;
 }
-
 </style>

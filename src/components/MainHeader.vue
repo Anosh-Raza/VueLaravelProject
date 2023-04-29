@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div class="navbar bg-dgtext-800 fixed w-full z-10">
+    <div class="navbar bg-dgtext-800 fixed w-full z-20">
         <nav class="
           container
           px-6

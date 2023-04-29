@@ -3,6 +3,7 @@
         <ul class="tabs_header">
             <li
             v-for="title in tabTitles" :key="title"
+            :class="{selected: title == selectedTitle}"
             @click="selectedTitle = title"
             >
             {{ title }}
@@ -44,9 +45,9 @@ export default {
     display: flex;
 }
 .tabs_header li{
-    width: 80px;
+    width: 100%;
     text-align: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin-right: 10px;
     background-color: #ddd;
     border-radius: 5px;
@@ -54,7 +55,24 @@ export default {
     transition: 0.4s all ease-out;
 }
 .tabs_header li.selected{
-    background-color: red;
     color: white;
+    background-color: #e40246;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+}
+
+@media screen and (max-width:399px) {
+    .tabs_header{
+        width: 300px;
+    }    
+    .tabs_header li{
+    width: 80%;
+    font-size: 11px;
+    text-align: center;
+    padding: 2px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s all ease-out;
+}
 }
 </style>

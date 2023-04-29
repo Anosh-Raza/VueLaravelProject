@@ -15,6 +15,9 @@ module.exports = {
       dgtext: {
         800: "#1f1646",
       },
+      formbg: {
+        850: "#f5f8fa",
+      },
       dgbg: {
         900: "#eeeeee",
       },

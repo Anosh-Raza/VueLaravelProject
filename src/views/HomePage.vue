@@ -1,39 +1,20 @@
 <template>
-<!-- <section>
-    <div v-if="error">Oops; error encountered: {{ error.message }}</div>
-    <div v-else-if="studentData">
-        <div v-for="({id, stuname, email}, i) in studentData" :key="id">
-            <h2>
-                {{ ++i }} {{ stuname }} {{ email }}
-            </h2>
-        </div>
-    </div>
-</section> -->
-<section class="bg-gradient-to-br from-dgtext-800 to-dgcon-400 md:h-screen md:px-12 md:pt-12 px-2 py-4">
-    <div class="grid md:grid-cols-2 w-4/5 justify-center items-center container mx-auto">
-        <div class="text-dgcon-500 text-left">Working With The <br>
-            <span class="md:text-6xl text-3xl text-green-500">Best Digital Marketing Agency</span>
-            <br><br>
-            <span class="md:text-4xl tracking-[0.2em] italic">in Los Angeles</span>
-            <p class="pt-4 md:pr-28">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptates sed dolore cupiditate eaque similique et iusto ratione soluta nemo?</p>
-            <div class="flex mt-8">
-                <CTAButton class="ctaabout mr-4 bg-dgcon-500 hover:bg-green-600 text-dgcon-400 font-bold">Get Started</CTAButton>
-                <CTAButton class="ctaabout bg-dgcon-500 hover:bg-green-600 text-dgcon-400 font-bold">See Portfolio</CTAButton>
+<section class="aboutuspg md:h-screen md:px-12 md:pt-48 pt-24 p-4">
+    <div class="grid md:grid-cols-2 justify-center items-center container mx-auto md:w-4/5">
+        <div class="text-left">
+            <span class="md:text-6xl text-3xl text-dgtext-800 font-extrabold">Empowering</span><br>
+            <span class="md:text-6xl text-3xl text-red-950 font-extrabold">Technolofy</span>
+            <p class="mt-4">As a full-service technology and digital marketing company we bring our insights, knowledge, and expertise to the digital ecosystem to create exponential growth for online retailers and e-commerces in the GCC region.</p>
+            <div class="mt-8">
+                <CTAButton class="ctaabout mr-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Contact Us</CTAButton>
             </div>
         </div>
-        <div class="flex flex-col md:items-center py-8">
-            <form class="bannerForm space-y-4 bg-dgtext-800 p-4 rounded-lg">
-                <input type="text" id="first-name" name="first-name" placeholder="First Name" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full text-3xl border-gray-300 rounded-md placeholder-gray-300 pl-4" style="font-size: 15px;">
-                <input type="text" id="last-name" name="last-name" placeholder="Last Name" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full text-3xl border-gray-300 rounded-md placeholder-gray-300 pl-4" style="font-size: 15px;">
-                <input type="text" id="last-name" name="last-name" placeholder="Email Address" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full text-3xl border-gray-300 rounded-md placeholder-gray-300 pl-4" style="font-size: 15px;">
-                <textarea id="message" name="message" rows="4" placeholder="Your Message" class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full text-3xl border-gray-300 rounded-md pl-4" style="font-size: 15px;"></textarea>
-                <button type="submit" class="text-left py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-dgbg-900 hover:bg-gray-950 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dgbg-900">
-                    Submit
-                </button>
-            </form>
+        <div class="rotate flex flex-col-reverse items-end mt-[-10em]">
+            <div class="portLines w-1/2 h-10 bg-gradient-to-r from-red-950"></div>
+            <div class="portLines w-9/12 h-10 bg-gradient-to-r from-dgbg-900"></div>
+            <div class="portLines w-full h-10 bg-gradient-to-r from-dgtext-800"></div>
         </div>
     </div>
-  
 </section>
 
 <section class="flex justify-center items-center bg-dgcon-500">
@@ -121,33 +102,24 @@
 </div>
 </SECTION>
 
-<section>
-    <TabsWrapper>
-        <TabView title="Tab 1">Hello From Tab 1</TabView>
-        <TabView title="Tab 2">Hello From Tab 2</TabView>
-        <TabView title="Tab 3">Hello From Tab 3</TabView>
-        <TabView title="Tab 4">Hello From Tab 4</TabView>
-    </TabsWrapper>
-</section>
-
 <section class="aboutUStwo container mx-auto pt-8 md:pb-32 my-8">
-    <h3 class="md:text-4xl">Schedule Your <span class="font-extrabold tracking-[0.5em]">Free</span></h3>
-    <h5 class="md:text-2xl">Consultation</h5>
+    <h3 class="text-2xl font-extrabold">Schedule Your <span class="tracking-[0.5em] text-red-950">Free</span></h3>
+    <h5 class="md:text-xl">Consultation</h5>
     <div class="grid lg:grid-cols-2 justify-center  text-left md:mt-12 p-8">
         <div class=" md:pr-16">
-            <p class="text-2xl font-extrabold text-green-500">Ask The Way You Want</p>
+            <p class="text-2xl font-extrabold text-red-950">Ask The Way You Want</p>
             <h4 class="text-lg font-bold">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h4>
             <p class="pt-8 md:text-sm">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <ul class="list-disc pt-8 pl-4">
-                <li>Separated they live Separated they</li>
-                <li>Grove right at Grove right at</li>
-                <li>The coast of the coast of the</li>
-                <li>Semantics, a large sem antics, a large</li>
+            <ul class="list-none pt-8 pl-4">
+                <li class="marker-color">Separated they live Separated they</li>
+                <li class="marker-color">Grove right at Grove right at</li>
+                <li class="marker-color">The coast of the coast of the</li>
+                <li class="marker-color">Semantics, a large sem antics, a large</li>
             </ul>
-            <CTAButton class="ctaabout mr-4 bg-dgcon-500 hover:bg-green-600 text-dgcon-400 font-bold mt-10">Get Started</CTAButton>
+            <CTAButton class="ctaabout mr-4 my-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Get Started</CTAButton>
         </div>
-        <div class="md:pt-0 pt-8">
-            <p class="text-3xl font-extrabold text-green-500 pb-4">Fill The Form</p>
+        <div class="md:pt-4 p-8 bg-dgtext-800 rounded-2xl text-dgcon-500">
+            <p class="text-3xl font-extrabold text-green-500 pb-4 ">Fill The Form</p>
             <ContactForm />
         </div>
     </div>
@@ -155,8 +127,6 @@
 </template>
 
 <script>
-import TabsWrapper from '@/components/Tabs/TabsWrapper.vue'
-import TabView from '@/components/Tabs/TabView.vue'
 import AccordionView from '@/components/Accordian/AccordianView.vue'
 import LogoTail from '../components/HomeBanner/logoCarousel.vue'
 import CTAButton from '../components/NavButton.vue'
@@ -192,8 +162,6 @@ export default {
         AboutUSCards,
         ClientLogos,
         AccordionView,
-        TabsWrapper,
-        TabView
     },
     data() {
         return {
@@ -206,6 +174,27 @@ export default {
 </script>
 
 <style scoped>
+.marker-color::before{
+    content: "\25BA";
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+  color: #e40246;
+}
+.portLines{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.aboutuspg{
+    background-image: url('../assets/aboutUSbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.rotate{
+    transform: rotate(142deg);
+    overflow: hidden;
+}
 .bannerForm {
     box-shadow: 1px 1px 20px 11px #ffffff24;
 }

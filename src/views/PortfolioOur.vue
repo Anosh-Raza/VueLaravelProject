@@ -7,7 +7,7 @@
             <span class="md:text-6xl text-3xl text-red-950 font-extrabold">Excellence</span>
             <p class="mt-4">Visit our portfolio to see the previous work that has gotten us incredible praise and gratitude from our customers. Our portfolio includes animations, printing, graphics, logos, and website development.</p>
             <div class="mt-8">
-                <CTAButton class="ctaabout mr-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">See Portfolio</CTAButton>
+                <CTAButton class="ctaabout mr-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Contact Us</CTAButton>
             </div>
         </div>
         <div class="rotate flex flex-col-reverse items-end md:mt-[-10em]">
@@ -18,7 +18,30 @@
     </div>
 </section>
 
+<section class="z-10">
+    <TabsWrapper>
+        <TabView title="Logo"><ClientLogos/></TabView> 
+        <TabView title="Website">Hello From Tab 2</TabView>
+        <TabView title="Ecommerce">Hello From Tab 3</TabView>
+        <TabView title="Animation">Hello From Tab 4</TabView>
+    </TabsWrapper>
+</section>
+
 </template>
+
+<script>
+import TabsWrapper from '@/components/Tabs/TabsWrapper.vue'
+import TabView from '@/components/Tabs/TabView.vue'
+import ClientLogos from '../components/ClientLogos/ClientTail.vue'
+export default {
+name: "HomePage",
+    components: {
+        TabView,
+        TabsWrapper,
+        ClientLogos
+    },
+}
+</script>
 
 <style scoped>
 .portLines{

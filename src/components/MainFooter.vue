@@ -1,9 +1,12 @@
 <template>
 <section class="footer">
     <section class="bg-red-950 text-dgcon-500">
-        <div class="grid md:grid-cols-2 py-8 px-4 items-center mx-auto max-w-screen-xl lg:py-16 lg:px-6 space-y-10">
+        <div class="grid md:grid-cols-2 py-4 px-4 items-center mx-auto max-w-screen-xl lg:py-4 lg:px-6 space-y-10">
             <div class="text-left space-y-5">
-                <div class="font-bold">Contact</div>
+                <div class="flex items-center">
+                    <div class="lineBefore"></div>
+                    <div class="firstheading text-sm text-dgcon-500 font-bold">CONTACT US</div>
+                </div>
                 <div class="text-5xl">Let's write your <br> story, together.</div>
             </div>
             <div class="mx-auto max-w-screen-md text-left">
@@ -121,3 +124,13 @@
 
 </section>
 </template>
+
+<style scoped>
+.lineBefore{
+    height: 5px;
+    width: 25px;
+    margin-right: 10px;
+    background-color: #1f1646;
+    border-radius: 10px;
+}
+</style>

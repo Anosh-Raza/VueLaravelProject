@@ -3,7 +3,7 @@
             prevEl: '.swiper-button-prev',
             nextEl: '.swiper-button-next',
           }" :autoplay="{
-            delay: 500,
+            delay: 2000,
             disbaleOnInteraction: true,
             pauseOnMouseEnter: true
         }"

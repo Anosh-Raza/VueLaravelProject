@@ -1,7 +1,7 @@
 <template>
 <section>
-    <div class="grid md:grid-cols-2 pt-28 w-4/5 mx-auto py-28 space-y-10">
-        <div class="text-left space-y-10 md:w-9/12">
+    <div class="grid md:grid-cols-2 pt-28 w-4/5 mx-auto py-28 space-y-10 items-start">
+        <div class="text-left space-y-10 md:w-9/12 pt-10">
             <div class="flex items-center">
                 <div class="lineBefore"></div>
                 <div class="firstheading text-[19px] font-bold" style="color:black; letter-spacing: 0.5em;">CONTACT US</div>
@@ -15,14 +15,40 @@
         </div>
     </div>
 </section>
+
+<section>
+    <div class="home">
+        <Modal @close="toggleModal" :modalActive="modalActive">
+            <div class="modal-content">
+                <h1>this is </h1>
+                <p>this is modal message </p>
+            </div>
+        </Modal>
+        <button @click="toggleModal" type="button">Open Modal</button>
+    </div>
+</section>
+
 </template>
 
 <script>
 import ContactForm from '../components/ContactForm/MyContact.vue'
+import Modal from '../components/Modal/ModalComp.vue'
+import { ref } from 'vue'
+
 export default {
     components: {
-        ContactForm
-    }
+        ContactForm,
+        Modal
+    },
+    setup() {
+        const modalActive = ref(false);
+
+        const toggleModal = () => {
+            modalActive.value = !modalActive.value;
+        };
+
+        return { modalActive, toggleModal };
+    },
 }
 </script>
 

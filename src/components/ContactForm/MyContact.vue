@@ -66,6 +66,6 @@ label.relative::after {
   font-size: 10px;
 }
 input{
-    border: 2px black;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
 }
 </style>

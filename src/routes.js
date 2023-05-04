@@ -2,8 +2,12 @@ import { createWebHistory,createRouter } from "vue-router"
 import Home from './views/HomePage.vue'
 import AboutUs from './views/AboutPage.vue'
 import Blog from './views/BlogPage.vue'
+import Services from './views/ServicePage.vue'
 import Portfolio from './views/PortfolioOur.vue'
 import ContactUs from './views/ContactUsPage.vue'
+import DigiMarketing from './views/OurServices/DigiMark.vue'
+import WebDev from './views/OurServices/WebDev.vue'
+import GraphicDesign from './views/OurServices/GraphicDesign.vue'
 
 
 const routes=[
@@ -16,6 +20,26 @@ const routes=[
         name:'AboutUs',
         path:'/aboutus',
         component:AboutUs
+    },
+    {
+        name:'Services',
+        path:'/services',
+        component:Services
+    },
+    {
+        name:'DigiMarketing',
+        path:'/services/digital-marketing',
+        component:DigiMarketing
+    },
+    {
+        name:'WebDev',
+        path:'/services/web-development',
+        component:WebDev
+    },
+    {
+        name:'GraphicDesign',
+        path:'/services/graphic-designing',
+        component:GraphicDesign
     },
     {
         name:'Blog',

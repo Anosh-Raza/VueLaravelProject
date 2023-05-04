@@ -34,7 +34,7 @@
     </div>
 </section>
 
-<section class="container mx-auto w-4/5">
+<section class="container mx-auto w-full">
     <div class="my-12">
         <h2 class="text-2xl font-extrabold text-green-500 py-8">Our Clients</h2>
         <ClientLogos />

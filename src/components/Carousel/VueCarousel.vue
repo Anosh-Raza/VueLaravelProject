@@ -1,9 +1,10 @@
 <template>
 <swiper :modules="modules" :slides-per-view="1" :slides-per-group="1" :loop="true" :pagination="false" :autoplay="{
-    delay: 1000,
+    delay: 3000,
     disableOnInteraction: false,
     pauseOnMouseEnter: false
-}" :breakpoints="{
+}"  
+:breakpoints="{
           399: {
             slidesPerView: 3,
             slidesPerGroup: 1
@@ -102,5 +103,26 @@ export default {
     left: 40%;
     margin-top: -150px;
     width: 50%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    right: 10px;
+    background-color: red;
+}
+
+.swiper-button-prev {
+    left: 10px;
+    background-color: red;
 }
 </style>

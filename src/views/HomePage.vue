@@ -1,12 +1,12 @@
 <template>
-<section class="aboutuspg md:h-screen md:px-12 md:pt-48 pt-24 p-4">
-    <div class="grid md:grid-cols-2 justify-center items-center container mx-auto md:w-4/5">
-        <div class="text-left">
+<section class="aboutuspg md:h-screen md:pt-40 pt-24">
+    <div class="grid md:grid-cols-2 justify-center items-center md:px-12 p-4 container mx-auto md:w-4/5">
+        <div id="forz" class="text-left">
             <span class="md:text-6xl text-3xl text-dgtext-800 font-extrabold">Empowering</span><br>
-            <span class="md:text-6xl text-3xl text-red-950 font-extrabold">Technolofy</span>
+            <span class="md:text-6xl text-3xl text-red-950 font-extrabold">Technology</span>
             <p class="mt-4">As a full-service technology and digital marketing company we bring our insights, knowledge, and expertise to the digital ecosystem to create exponential growth for online retailers and e-commerces in the GCC region.</p>
             <div class="mt-8">
-                <CTAButton class="ctaabout mr-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Contact Us</CTAButton>
+                <CTAButton class="ctaabout my-4 bg-dgcon-400  text-dgbg-900 hover:text-white border-solid border-2 border-gray-950 rounded-lg">Contact Us</CTAButton>
             </div>
         </div>
         <div class="rotate flex flex-col-reverse items-end mt-[-10em]">
@@ -15,9 +15,12 @@
             <div class="portLines w-full h-10 bg-gradient-to-r from-dgtext-800"></div>
         </div>
     </div>
+    <div>
+            <RevieRating/>
+        </div>
 </section>
 
-<section class="flex justify-center items-center bg-dgcon-500">
+<section class="flex justify-center items-center bg-dgcon-500 md:mt-40">
     <LogoTail />
 </section>
 
@@ -40,14 +43,13 @@
 
 <section class="container mx-auto w-5/6">
     <div class="grid md:grid-cols-2 md:my-20 my-8 items-center">
-        <div class="text-left px-[20px]">
-            <h3 class="text-3xl">About Us | <span class="text-dgcon-400 font-bold">DG Concepts</span></h3>
-            <p style="line-height: 32px;" class="text-lg">Dg Concepts is a full-service digital marketing agency that lives and breathes “Outside the box”. From design and development to SEO services, pay-per-click, content, social, and beyond, we work together to ensure you see the best results across all campaigns.</p>
+        <div class="text-left px-[20px] py-4">
+            <h3 class="md:text-3xl text-2xl">About Us | <span class="text-dgcon-400 font-bold">DG Concepts</span></h3>
+            <p style="line-height: 32px;" class="md:text-lg">Dg Concepts is a full-service digital marketing agency that lives and breathes “Outside the box”. From design and development to SEO services, pay-per-click, content, social, and beyond, we work together to ensure you see the best results across all campaigns.</p>
             <CTAButton class="ctaabout my-4 mr-4 bg-dgcon-400  text-dgbg-900 border-solid border-2 border-gray-950 rounded-lg">Learn More</CTAButton>
             <CTAButton class="ctaabout my-4 bg-dgcon-400  text-dgbg-900 hover:text-white border-solid border-2 border-gray-950 rounded-lg">Get Started</CTAButton>
         </div>
-
-        <div class="md:px-[20px] space-y-4 flex flex-col justify-start w-full">
+        <div class="md:px-[20px] py-8 space-y-4 flex flex-col justify-start w-full">
             <AboutUSCards iconClasses="bi bi-cloud-check-fill" title="Be on the top of Google" />
             <AboutUSCards iconClasses="bi bi-clock-fill" title="Save your time & let us handle it" />
             <AboutUSCards iconClasses="bi bi-phone-fill" title="Cross-devices ability" />
@@ -75,7 +77,7 @@
     </div>
 </section>
 
-<section class="container mx-auto w-4/5">
+<section class="container mx-auto w-full">
     <div>
         <h2 class="md:text-5xl text-dgtext-800 md:py-4 font-extrabold">Our Clients</h2>
         <ClientLogos />
@@ -87,7 +89,7 @@
         <img src="../assets/online_ad.svg" alt="">
     </div>
     <h3 class="text-2xl font-extrabold text-green-500 py-8">See Our Client</h3>
-    <div class="bg-dgtext-800">
+    <div>
         <ClientCarousel />
     </div>
 </section>
@@ -118,8 +120,8 @@
             </ul>
             <CTAButton class="ctaabout mr-4 my-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Get Started</CTAButton>
         </div>
-        <div class="md:pt-4 p-8 bg-dgtext-800 rounded-2xl text-dgcon-500">
-            <p class="text-3xl font-extrabold text-green-500 pb-4 ">Fill The Form</p>
+        <div>
+            <p class="text-3xl font-extrabold text-dgtext-800 text-green-500 pb-4 ">Fill The Form</p>
             <ContactForm />
         </div>
     </div>
@@ -127,6 +129,7 @@
 </template>
 
 <script>
+import RevieRating from '../components/ReviewsRating.vue'
 import AccordionView from '@/components/Accordian/AccordianView.vue'
 import LogoTail from '../components/HomeBanner/logoCarousel.vue'
 import CTAButton from '../components/NavButton.vue'
@@ -162,6 +165,7 @@ export default {
         AboutUSCards,
         ClientLogos,
         AccordionView,
+        RevieRating
     },
     data() {
         return {
@@ -194,6 +198,10 @@ export default {
 .rotate{
     transform: rotate(142deg);
     overflow: hidden;
+    z-index: 1;
+}
+#forz{
+    z-index: 10;
 }
 .bannerForm {
     box-shadow: 1px 1px 20px 11px #ffffff24;

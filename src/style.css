@@ -1,0 +1,26 @@
+.aboutuspg{
+    background-image: url('@/assets/aboutUSbg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.portLines{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.rotate{
+    transform: rotate(142deg);
+    overflow: hidden;
+    z-index: 1;
+}
+.ctaabout {
+    box-shadow: 9px 7px 38px -1px rgba(0, 0, 0, 0.29);
+}
+
+.ctaabout:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+}
+#forz{
+    z-index: 10;
+}

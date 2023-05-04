@@ -8,6 +8,9 @@ import ContactUs from './views/ContactUsPage.vue'
 import DigiMarketing from './views/OurServices/DigiMark.vue'
 import WebDev from './views/OurServices/WebDev.vue'
 import GraphicDesign from './views/OurServices/GraphicDesign.vue'
+import VideoAnimation from './views/OurServices/VideoAnimations.vue'
+import SearchEngine from './views/OurServices/SearchEngine.vue'
+import ContentWriting from './views/OurServices/ContentWriting.vue'
 
 
 const routes=[
@@ -40,6 +43,21 @@ const routes=[
         name:'GraphicDesign',
         path:'/services/graphic-designing',
         component:GraphicDesign
+    },
+    {
+        name:'VideoAnimation',
+        path:'/services/video-animations',
+        component:VideoAnimation
+    },
+    {
+        name:'SearchEngine',
+        path:'/services/search-engine-optimization',
+        component:SearchEngine
+    },
+    {
+        name:'ContentWriting',
+        path:'/services/content-writing',
+        component:ContentWriting
     },
     {
         name:'Blog',

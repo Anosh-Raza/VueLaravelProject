@@ -18,7 +18,7 @@
     </div>
 </section>
 
-<section class="z-10">
+<section class="tabsComp">
     <TabsWrapper>
         <TabView title="Logo"><ClientLogos/></TabView> 
         <TabView title="Website">Hello From Tab 2</TabView>
@@ -44,6 +44,9 @@ name: "HomePage",
 </script>
 
 <style scoped>
+.tabsComp{
+    z-index: 10;
+}
 .portLines{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;

@@ -24,20 +24,20 @@
                 <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
                     <div class="home">
                         <Modal @mouseleave="toggleModal" :modalActive="modalActive">
-                            <div class="modal-content grid grid-cols-2 space-x-4">
+                            <div class="modal-content grid grid-cols-2 space-x-2" style="transition: 5s">
                                 <div>
                                     <li><router-link to="/services/digital-marketing">Digital Marketing</router-link></li>
                                     <li><router-link to="/services/web-development">Web Development</router-link></li>
                                     <li><router-link to="/services/graphic-designing">Graphic Designing</router-link></li>
                                 </div>
                                 <div>
-                                    <li><router-link to="/services/digital-marketing">Digital Marketing</router-link></li>
-                                    <li><router-link to="/services/web-development">Web Development</router-link></li>
-                                    <li><router-link to="/services/graphic-designing">Graphic Designing</router-link></li>
+                                    <li><router-link to="/services/content-writing">Content Writing</router-link></li>
+                                    <li><router-link to="/services/search-engine-optimization">Search Engine Optimization</router-link></li>
+                                    <li><router-link to="/services/video-animations">Video Animations</router-link></li>
                                 </div>
                             </div>
                         </Modal>
-                        <button @mouseenter="toggleModal" type="button">Services</button>
+                        <button @mouseenter="toggleModal" @mouseleave="toggleModal" type="button">Services <i class="bi bi-caret-down-fill"></i></button>
                     </div>
                 </li>
                 <li class="text-sm font-bold text-dgbg-900 hover:text-dgbg-900">
@@ -107,6 +107,7 @@ export default {
 .modal-content{
     background-color: #1f1646;
     padding: 12px;
+    transition: 3s ease-out;
 }
 .modal-content li{
     margin: 10px 0;

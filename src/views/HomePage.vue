@@ -234,14 +234,7 @@ export default {
     transition: 3s;
 }
 
-.ctaabout {
-    box-shadow: 9px 7px 38px -1px rgba(0, 0, 0, 0.29);
-}
 
-.ctaabout:hover {
-    transform: translateY(-10px);
-    transition: transform 0.5s ease-in-out;
-}
 
 .homecards {
     box-shadow: 1px 1px 12px 0 #00000024;

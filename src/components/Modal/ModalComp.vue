@@ -31,5 +31,23 @@ export default {
 </script>
 
 <style scoped>
+.modal-animation-enter-active,
+.modal-animation-leave-active {
+  transition: opacity 0.2s ease-in-out;
+}
 
+.modal-animation-enter,
+.modal-animation-leave-to {
+  opacity: 0;
+}
+
+.modal-animation-inner-enter-active,
+.modal-animation-inner-leave-active {
+  transition: transform 0.2s ease-in-out;
+}
+
+.modal-animation-inner-enter,
+.modal-animation-inner-leave-to {
+  transform: scale(0.7);
+}
 </style>

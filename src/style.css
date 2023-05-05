@@ -24,3 +24,10 @@
 #forz{
     z-index: 10;
 }
+.lineBefore{
+    height: 5px;
+    width: 25px;
+    margin-right: 10px;
+    background-color: #1f1646;
+    border-radius: 10px;
+}

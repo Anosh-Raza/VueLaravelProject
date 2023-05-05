@@ -32,7 +32,7 @@
 <script>
 import TabsWrapper from '@/components/Tabs/TabsWrapper.vue'
 import TabView from '@/components/Tabs/TabView.vue'
-import ClientLogos from '../components/ClientLogos/ClientTail.vue'
+import ClientLogos from '@/components/ClientLogos/ClientTail.vue'
 export default {
 name: "HomePage",
     components: {

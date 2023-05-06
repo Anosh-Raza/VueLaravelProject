@@ -12,7 +12,9 @@
     <swiper-slide v-for="text in swiperTextBase" :key="text.description">
         <div class="md:px-4 md:py-1 m-6 bg-red-950 rounded-xl">
             <div class="md:p-8 p-4 md:text-left">
-                <img class="w-1/4 object-cover rounded-full" :src="text.img" alt="">
+                <div class="circle-image flex justify-center">
+                    <img class="w-1/4 object-cover" :src="text.img" alt="">
+                </div>
                 <p class="text-white md:text-[30px] text-xl md:leading-[1em] italic py-4 md:pr-4 text-dgbg-900">{{ text.description }}</p>
                 <h1 class="md:text-2xl font-extrabold text-dgbg-900 md:tracking-[0.01em]">{{ text.author }}</h1>
                 <p class="text-dgbg-900 text-sm">{{ text.designation }}</p>
@@ -124,5 +126,18 @@ export default {
 .swiper-button-prev {
     left: 10px;
     background-color: red;
+}
+.circle-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px 5px rgba(0,0,0,.15);
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

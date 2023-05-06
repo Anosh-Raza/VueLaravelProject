@@ -43,3 +43,12 @@
     background-color: #f44336;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.507);
 }
+
+/*Pointer Color*/
+.marker-color::before {
+    content: "\25BA";
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
+    color: #e40246;
+}

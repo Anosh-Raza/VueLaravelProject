@@ -43,7 +43,7 @@
 
 <section class="bg-gray-950 mt-12">
     <h3 class="text-2xl font-extrabold text-green-500 py-8">See Our Client</h3>
-    <div class="bg-dgtext-800">
+    <div class="bg-formbg-850">
         <ClientCarousel />
     </div>
 </section>
@@ -53,7 +53,7 @@
     <h5 class="md:text-xl">Consultation</h5>
     <div class="grid lg:grid-cols-2 justify-center  text-left md:mt-12 p-8">
         <div class=" md:pr-16">
-            <p class="text-2xl font-extrabold text-red-950">Ask The Way You Want</p>
+            <div class="md:text-5xl text-3xl font-extrabold mb-8 text-red-950">Ask The Way You Want</div>
             <h4 class="text-lg font-bold">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h4>
             <p class="pt-8 md:text-sm">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
             <ul class="list-none pt-8 pl-4">
@@ -63,9 +63,21 @@
                 <li class="marker-color">Semantics, a large sem antics, a large</li>
             </ul>
             <CTAButton class="ctaabout mr-4 my-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Get Started</CTAButton>
+            <div class="mt-8">
+                <div class="flex items-center">
+                    <div class="lineBefore"></div>
+                    <div class="firstheading text-[14px] font-bold" style="color:black; letter-spacing: 0.3em;">FOLLOW US</div>
+                </div>
+                <ul style="list-style: none; display: flex; gap: 10px; font-size: 24px; padding: 0; margin-top: 10px;">
+                    <li class="followCtc"><i class="bi bi-facebook"></i></li>
+                    <li class="followCtc"><i class="bi bi-instagram"></i></li>
+                    <li class="followCtc"><i class="bi bi-twitter"></i></li>
+                    <li class="followCtc"><i class="bi bi-linkedin"></i></li>
+                </ul>
+            </div>
         </div>
-        <div class="md:pt-4 p-8 bg-dgtext-800 rounded-2xl text-dgcon-500">
-            <p class="text-3xl font-extrabold text-green-500 pb-4">Fill The Form</p>
+        <div>
+            <p class="text-3xl font-extrabold text-dgtext-800 text-green-500 pb-4 ">Fill The Form</p>
             <ContactForm />
         </div>
     </div>

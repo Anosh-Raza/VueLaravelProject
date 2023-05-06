@@ -6,7 +6,7 @@
             <span class="md:text-6xl text-3xl text-red-950 font-extrabold">Marketing</span>
             <p class="mt-4 text-dgbg-900">Whether you want to go all loud and proud or unfold your success story in phases, our marketing services set your brand apart</p>
             <div class="mt-4">
-                <CTAButton class="ctaabout my-4 bg-dgcon-400  text-dgbg-900 hover:text-white border-solid border-2 border-gray-950 rounded-lg">Contact Us</CTAButton>
+                <CTAButton class="ctaabout my-4 bg-dgcon-400  text-dgbg-900 hover:text-white border-solid border-2 border-gray-950 rounded-lg">                        <router-link to="/contact-us">Get Started</router-link></CTAButton>
             </div>
         </div>
     </div>
@@ -66,15 +66,41 @@
         </div>
     </div>
 </section>
+
+<section class="aboutUStwo container mx-auto pt-8 md:pb-32 my-8">
+    <h3 class="text-2xl font-extrabold">Schedule Your <span class="tracking-[0.5em] text-red-950">Free</span></h3>
+    <h5 class="md:text-xl">Consultation</h5>
+    <div class="grid lg:grid-cols-2 justify-center  text-left md:mt-12 p-8">
+        <div class=" md:pr-16">
+            <p class="text-2xl font-extrabold text-red-950">Ask The Way You Want</p>
+            <h4 class="text-lg font-bold">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h4>
+            <p class="pt-8 md:text-sm">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <ul class="list-none pt-8 pl-4">
+                <li class="marker-color">Separated they live Separated they</li>
+                <li class="marker-color">Grove right at Grove right at</li>
+                <li class="marker-color">The coast of the coast of the</li>
+                <li class="marker-color">Semantics, a large sem antics, a large</li>
+            </ul>
+            <CTAButton class="ctaabout mr-4 my-4 bg-dgcon-500 px-4 py-2 rounded-xl text-dgcon-400 font-bold">Get Started</CTAButton>
+        </div>
+        <div>
+            <p class="text-3xl font-extrabold text-dgtext-800 text-green-500 pb-4 ">Fill The Form</p>
+            <ContactForm />
+        </div>
+    </div>
+</section>
+
 </template>
 
 <script>
 import CTAButton from '@/components/NavButton.vue'
+import ContactForm from '@/components/ContactForm/MyContact.vue'
 
 export default {
     name: "DigitalMarketing",
     components: {
         CTAButton,
+        ContactForm
     },
 
 }

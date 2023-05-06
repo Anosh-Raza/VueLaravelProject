@@ -65,7 +65,8 @@ label.relative::after {
   right: -0.5em;
   font-size: 10px;
 }
-input{
-    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
+input, textarea{
+    box-shadow: 1px 1px 15px 6px rgba(0,0,0,.15);
+    border: 2px solid rgba(255, 255, 255, 0.699);
 }
 </style>

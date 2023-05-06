@@ -32,7 +32,7 @@
                                 </div>
                                 <div>
                                     <li><router-link to="/services/content-writing">Content Writing</router-link></li>
-                                    <li><router-link to="/services/search-engine-optimization">Search Engine Optimization</router-link></li>
+                                    <li><router-link to="/services/branding-printing">Branding & Printing</router-link></li>
                                     <li><router-link to="/services/video-animations">Video Animations</router-link></li>
                                 </div>
                             </div>

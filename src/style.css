@@ -14,7 +14,7 @@
     z-index: 1;
 }
 .ctaabout {
-    box-shadow: 9px 7px 38px -1px rgba(0, 0, 0, 0.29);
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,.15);
 }
 
 .ctaabout:hover {
@@ -30,4 +30,16 @@
     margin-right: 10px;
     background-color: #1f1646;
     border-radius: 10px;
+}
+
+/*SOCIAL MEDIA FOLLOW LINKS STYLING*/
+.followCtc{
+    background-color:#1f1646; 
+    border-radius: 50%; 
+    padding: 5px 10px; 
+    color: aliceblue;
+}
+.followCtc:hover{
+    background-color: #f44336;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.507);
 }

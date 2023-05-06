@@ -9,51 +9,39 @@
             <div class="md:text-5xl text-3xl font-extrabold">Get in touch & let’s talk</div>
             <p>We offer unparalleled regional and local insights. We listen. We co-create. We deliver. We are always ready to dive into the action.</p>
             <p>The question is, are you?</p>
+            <div>
+                <div class="flex items-center">
+                    <div class="lineBefore"></div>
+                    <div class="firstheading text-[14px] font-bold" style="color:black; letter-spacing: 0.3em;">FOLLOW US</div>
+                </div>
+                <ul style="list-style: none; display: flex; gap: 10px; font-size: 24px; padding: 0; margin-top: 10px;">
+                    <li class="followCtc"><i class="bi bi-facebook"></i></li>
+                    <li class="followCtc"><i class="bi bi-instagram"></i></li>
+                    <li class="followCtc"><i class="bi bi-twitter"></i></li>
+                    <li class="followCtc"><i class="bi bi-linkedin"></i></li>
+                </ul>
+            </div>
         </div>
         <div>
-            <ContactForm/>
+            <ContactForm />
         </div>
     </div>
 </section>
-
-<section>
-    <div class="home">
-        <Modal @close="toggleModal" :modalActive="modalActive">
-            <div class="modal-content">
-                <h1>this is </h1>
-                <p>this is modal message </p>
-            </div>
-        </Modal>
-        <button @click="toggleModal" type="button">Open Modal</button>
-    </div>
-</section>
-
 </template>
 
 <script>
 import ContactForm from '../components/ContactForm/MyContact.vue'
-import Modal from '../components/Modal/ModalComp.vue'
-import { ref } from 'vue'
 
 export default {
     components: {
         ContactForm,
-        Modal
     },
-    setup() {
-        const modalActive = ref(false);
 
-        const toggleModal = () => {
-            modalActive.value = !modalActive.value;
-        };
-
-        return { modalActive, toggleModal };
-    },
 }
 </script>
 
 <style scoped>
-.lineBefore{
+.lineBefore {
     height: 5px;
     width: 25px;
     margin-right: 10px;

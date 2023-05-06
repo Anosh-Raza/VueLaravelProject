@@ -15,18 +15,21 @@
             <div class="portLines w-full h-10 bg-gradient-to-r from-dgtext-800"></div>
         </div>
     </div>
-    <div>
-            <RevieRating/>
-        </div>
-</section>
-
-<section class="flex justify-center items-center bg-dgcon-500 md:mt-40">
-    <LogoTail />
 </section>
 
 <section>
+    <div>
+        <RevieRating />
+    </div>
+</section>
+
+<section class="flex justify-center items-center bg-dgcon-500 ">
+    <LogoTail />
+</section>
+
+<section class="ourServices py-16">
     <div class="container mx-auto w-5/6">
-        <h3 id="serVSec" class="text-4xl text-gray-950 pt-20 pb-8 font-bold">Our <span class="serviceSection font-thin font-sans text-5xl">Services</span></h3>
+        <h3 id="serVSec" class="text-4xl text-gray-950 pb-8 font-bold">Our <span class="serviceSection font-thin font-sans text-5xl">Services</span></h3>
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 px-[20px]">
             <HomeCard iconClasses="bi bi-box-arrow-up-right" title="Digital Marketing" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, inventore?" buttonText="Learn More" />
             <HomeCard iconClasses="bi bi-filetype-html" title="Web Development" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, inventore?" buttonText="Learn More" />
@@ -95,13 +98,13 @@
 </section>
 
 <SECTION class="my-12 bg-dgtext-800">
-<div class="container mx-auto w-4/5 py-8">
-    <div class="text-left">
-        <div class="text-dgbg-900 md:text-6xl text-3xl font-bold">Frequently</div>
-        <div class="text-dgbg-900 md:text-4xl text-lg font-bold tracking-[0.5em] pt-2">Asked Question</div>
+    <div class="container mx-auto w-4/5 py-8">
+        <div class="text-left">
+            <div class="text-dgbg-900 md:text-6xl text-3xl font-bold">Frequently</div>
+            <div class="text-dgbg-900 md:text-4xl text-lg font-bold tracking-[0.5em] pt-2">Asked Question</div>
+        </div>
+        <AccordionView />
     </div>
-    <AccordionView />
-</div>
 </SECTION>
 
 <section class="aboutUStwo container mx-auto pt-8 md:pb-32 my-8">
@@ -109,7 +112,7 @@
     <h5 class="md:text-xl">Consultation</h5>
     <div class="grid lg:grid-cols-2 justify-center  text-left md:mt-12 p-8">
         <div class=" md:pr-16">
-            <p class="text-2xl font-extrabold text-red-950">Ask The Way You Want</p>
+            <div class="md:text-5xl text-3xl font-extrabold mb-8 text-red-950">Ask The Way You Want</div>
             <h4 class="text-lg font-bold">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h4>
             <p class="pt-8 md:text-sm">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
             <ul class="list-none pt-8 pl-4">
@@ -119,6 +122,18 @@
                 <li class="marker-color">Semantics, a large sem antics, a large</li>
             </ul>
             <CTAButton class="ctaabout mr-4 my-4 bg-dgcon-500 px-4 py-2 shadow-xl rounded-xl text-dgcon-400 font-bold">Get Started</CTAButton>
+            <div class="mt-8">
+                <div class="flex items-center">
+                    <div class="lineBefore"></div>
+                    <div class="firstheading text-[14px] font-bold" style="color:black; letter-spacing: 0.3em;">FOLLOW US</div>
+                </div>
+                <ul style="list-style: none; display: flex; gap: 10px; font-size: 24px; padding: 0; margin-top: 10px;">
+                    <li class="followCtc"><i class="bi bi-facebook"></i></li>
+                    <li class="followCtc"><i class="bi bi-instagram"></i></li>
+                    <li class="followCtc"><i class="bi bi-twitter"></i></li>
+                    <li class="followCtc"><i class="bi bi-linkedin"></i></li>
+                </ul>
+            </div>
         </div>
         <div>
             <p class="text-3xl font-extrabold text-dgtext-800 text-green-500 pb-4 ">Fill The Form</p>
@@ -136,21 +151,10 @@ import CTAButton from '../components/NavButton.vue'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import HomeCard from '../components/HomeCards.vue'
 import ClientCarousel from '../components/Carousel/VueCarousel.vue'
-// import UserCard from '../components/HomeBanner/UserCard.vue'
 import ContactForm from '../components/ContactForm/MyContact.vue'
 import AboutUSCards from '../components/HomeBanner/AboutUsDG.vue'
 import MultipleCounters from '../components/Counter/VueJSCounter.vue'
 import ClientLogos from '../components/ClientLogos/ClientTail.vue'
-// import {
-//     onMounted
-// } from "vue";
-// import useStudent from '../composables/studentApi';
-// const {
-//     studentData,
-//     error,
-//     getAllStudent
-// } = useStudent();
-// onMounted(getAllStudent);
 
 export default {
     name: "HomePage",
@@ -159,7 +163,6 @@ export default {
         HomeCard,
         ContactForm,
         ClientCarousel,
-        // UserCard,
         LogoTail,
         MultipleCounters,
         AboutUSCards,
@@ -178,31 +181,44 @@ export default {
 </script>
 
 <style scoped>
-.marker-color::before{
-    content: "\25BA";
-  display: inline-block;
-  width: 1.5em;
-  margin-left: -1em;
-  color: #e40246;
+
+.ourServices{
+    background-color: rgba(231, 231, 231, 0.21);
 }
-.portLines{
+.lineBefore {
+    background-color: #e40246;
+}
+
+.marker-color::before {
+    content: "\25BA";
+    display: inline-block;
+    width: 1.5em;
+    margin-left: -1em;
+    color: #e40246;
+}
+
+.portLines {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.aboutuspg{
+
+.aboutuspg {
     background-image: url('../assets/aboutUSbg.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
-.rotate{
+
+.rotate {
     transform: rotate(142deg);
     overflow: hidden;
     z-index: 1;
 }
-#forz{
+
+#forz {
     z-index: 10;
 }
+
 .bannerForm {
     box-shadow: 1px 1px 20px 11px #ffffff24;
 }
@@ -233,8 +249,6 @@ export default {
     transform: translateY(-10px);
     transition: 3s;
 }
-
-
 
 .homecards {
     box-shadow: 1px 1px 12px 0 #00000024;

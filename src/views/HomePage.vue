@@ -3,7 +3,7 @@
     <div class="grid md:grid-cols-2 justify-center items-center md:px-12 p-4 container mx-auto md:w-4/5">
         <div id="forz" class="text-left">
             <span class="md:text-6xl text-3xl text-dgtext-800 font-extrabold">Empowering</span><br>
-            <span class="md:text-6xl text-3xl text-red-950 font-extrabold">Technology</span>
+            <span class="md:text-6xl text-3xl text-red-950 font-extrabold"><TypeEffect/></span>
             <p class="mt-4">As a full-service technology and digital marketing company we bring our insights, knowledge, and expertise to the digital ecosystem to create exponential growth for online retailers and e-commerces in the GCC region.</p>
             <div class="mt-8">
                 <CTAButton class="ctaabout my-4 bg-dgcon-400  text-dgbg-900 hover:text-white border-solid border-2 border-gray-950 rounded-lg">Contact Us</CTAButton>
@@ -155,6 +155,8 @@ import ContactForm from '../components/ContactForm/MyContact.vue'
 import AboutUSCards from '../components/HomeBanner/AboutUsDG.vue'
 import MultipleCounters from '../components/Counter/VueJSCounter.vue'
 import ClientLogos from '../components/ClientLogos/ClientTail.vue'
+import TypeEffect from '@/components/TypingEffect/TypeEffect.vue'
+
 
 export default {
     name: "HomePage",
@@ -168,7 +170,8 @@ export default {
         AboutUSCards,
         ClientLogos,
         AccordionView,
-        RevieRating
+        RevieRating,
+        TypeEffect
     },
     data() {
         return {
